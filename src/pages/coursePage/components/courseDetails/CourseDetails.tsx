@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import './CourseDetails.styled.scss'
 import { Course } from '../../../../types/courses/courses'
 import { SkillsSection } from '../../../../ui-shared/skillsSection/SkillsSection'
+import { TabButton } from './tabButton/TabButton'
 
 interface Props {
   course: Course
@@ -27,15 +28,14 @@ export const CourseDetails = ({ course }: Props) => {
   return (
     <div className="aboutWrapper">
       <div className="buttonsWrapper">
-        <button id="description" className={isDescriptionTab ? 'active' : ''} onClick={handleTabChange}>
-          Description
-        </button>
-        <button id="details" className={isDetailsTab ? 'active' : ''} onClick={handleTabChange}>
-          Details
-        </button>
-        <button id="tags" className={isTagsTab ? 'active' : ''} onClick={handleTabChange}>
-          Tags
-        </button>
+        <TabButton
+          id="description"
+          className={isDescriptionTab ? 'active' : ''}
+          handleClick={handleTabChange}
+          text="Description"
+        />
+        <TabButton id="details" className={isDetailsTab ? 'active' : ''} handleClick={handleTabChange} text="Details" />
+        <TabButton id="tags" className={isTagsTab ? 'active' : ''} handleClick={handleTabChange} text="Tags" />
       </div>
 
       {isDescriptionTab && (

@@ -1,6 +1,6 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import './App.scss'
-import { BrowserRouter, Navigate, Route, Routes, ScrollRestoration } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 
 import { Layout } from './layout/Layout'
 import { AuthProvider } from './providers/api/AuthProvider'
