@@ -1,6 +1,7 @@
 {
   "name": "wisey-study",
   "version": "0.1.0",
+  "homepage": "https://annaostrovska.github.io/wiseyStudy/",
   "private": true,
   "dependencies": {
     "@tanstack/react-query": "^4.26.1",
@@ -23,6 +24,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -50,6 +53,7 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^5.0.0",
     "lint-staged": "^13.1.0",
     "prettier": "^2.8.3",
     "sass": "^1.58.0"
