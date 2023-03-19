@@ -1,0 +1,50 @@
+.loaderWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+
+  .loader {
+    width: 70px;
+    height: 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    margin: 200px;
+
+    &::after,
+    &::before {
+      content: '';
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #fc8846;
+      width: 20px;
+      height: 20px;
+      transform: translate(150%, 150%);
+      border-radius: 70%;
+    }
+
+    &::before {
+      left: auto;
+      top: auto;
+      right: 0;
+      bottom: 0;
+      transform: translate(-150%, -150%);
+    }
+
+    @keyframes rotation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.course {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  height: 300px;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+  color: #3e4a5e;
+  background-color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
+  }
+
+  .video {
+    display: flex;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+
+    div {
+      height: 260px;
+      width: 360px;
+    }
+
+    img {
+      border-radius: 24px;
+    }
+
+    video {
+      height: 100%;
+      border-radius: 24px;
+    }
+  }
+
+  .descriptionWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+
+    h4 {
+      font-size: 28px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 8px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 0 14px;
+  background-color: #2a31bf;
+  color: white;
+  border-radius: 18px;
+  font-size: 18px;
+
+  .rating {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-left: 6px;
+      height: 24px;
+      width: 24px;
+    }
+  }
+}

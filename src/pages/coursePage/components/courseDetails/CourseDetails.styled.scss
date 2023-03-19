@@ -1,0 +1,30 @@
+.aboutWrapper {
+  margin: 40px 0;
+  padding: 22px 22px 80px 0;
+  background: #2a31bf;
+  height: 180px;
+  width: 100%;
+  border-radius: 28px;
+
+  button {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .tab {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .block {
+      display: flex;
+      gap: 6px;
+    }
+  }
+
+  .skills {
+    margin-top: 8px;
+    height: 100%;
+  }
+}

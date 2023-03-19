@@ -1,0 +1,51 @@
+.pageWrapper {
+  margin: 0 100px;
+  user-select: none;
+  color: white;
+
+  .topWrapper {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 50%));
+    @media (max-width: 800px) {
+      grid-template-columns: 100%;
+    }
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+
+    h1,
+    h3,
+    h4 {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 64px;
+    }
+
+    h4 {
+      font-size: 18px;
+    }
+  }
+
+  .imageWrapper {
+    img {
+      width: 100%;
+    }
+  }
+
+
+  .coursesWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 44px;
+    padding-top: 80px;
+  }
+}
+

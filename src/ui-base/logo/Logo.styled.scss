@@ -1,0 +1,26 @@
+.logoWrapper {
+  padding: 4px;
+  display: flex;
+  background: white;
+  gap: 4px;
+  border-radius: 8px;
+  height: 30px;
+  align-items: center;
+  font-weight: 700;
+  user-select: none;
+}
+
+.wisey {
+  color: #2a31bf;
+}
+
+.studyWrapper {
+  border: #fc8846 2px solid;
+  border-radius: 4px;
+
+  .study {
+    color: #fc8846;
+    margin: 0;
+    padding: 2px;
+  }
+}
