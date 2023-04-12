@@ -63,6 +63,7 @@ export const CoursePage = () => {
         } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
           video.src = videoSrc
         }
+
         return () => video.removeEventListener('timeupdate', () => updateVideoMeta(video))
       }
     }
@@ -75,6 +76,7 @@ export const CoursePage = () => {
   if (isLoading) {
     return <Loader />
   }
+  
   return (
     <div className="coursePage">
       {course && (
